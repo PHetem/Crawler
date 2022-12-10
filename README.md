@@ -3,7 +3,7 @@
 ## Description #
 
 URL crawler API
-Useful for data mining appslications, among others
+Useful for data mining applications, among others
 
 ## Setup ##
 
