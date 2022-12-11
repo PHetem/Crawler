@@ -1,6 +1,6 @@
 {
     "name": "mpf/crawler",
-    "version":"1.0",
+    "version":"dev-main",
     "autoload": {
         "psr-4": {
             "API\\": "classes/"
