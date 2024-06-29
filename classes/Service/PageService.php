@@ -14,9 +14,9 @@ class PageService {
             throw new UnexpectedValueException('Invalid data');
 
         $Pages = $this->map($Pages);
-
         foreach($Pages as $Page) {
             Crawler::getNewPageInfo($Page);
+            $Page->saveResults();
         }
 
         return $Pages;

@@ -2,6 +2,11 @@
 
 use APIModule\Framework\Bootstrap;
 
-include_once(__DIR__ . '/../config/config.php');
+try {
+    include_once(__DIR__ . '/../config/config.php');
+} catch (Exception $e) {
+    echo $e->getMessage();
+    exit;
+}
 
 Bootstrap::handle();

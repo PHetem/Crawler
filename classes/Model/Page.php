@@ -14,4 +14,9 @@ class Page {
     public $Content;
 
     public $RecursiveUrls;
+
+    public function saveResults() {
+        $cacheFile = CACHE_PATH . md5($this->Url) . '_' . date('d_m_y_H_i_s') . '.html';
+        file_put_contents($cacheFile, $this->Content);
+    }
 }
